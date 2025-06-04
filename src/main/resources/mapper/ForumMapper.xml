@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xdd.init.mapper.ForumMapper">
+    <resultMap id="forumResultMap"  type="com.xdd.init.entity.Forum">
+        <id column="id" property="id"></id>
+        <result column="title" property="title"></result>
+        <result column="description" property="description"></result>
+        <result column="uid" property="uid"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="type" property="type"></result>
+        <result column="pic" property="pic"></result>
+        <result column="praise" property="praise"></result>
+        <result column="content" property="content"></result>
+        <result column="praise_uid" property="praiseUid"></result>
+        <result column="fid" property="fid"></result>
+        <collection ofType="com.xdd.init.entity.Forum" property="forums">
+            <id column="aid" property="id"></id>
+            <result column="atitle" property="title"></result>
+            <result column="adescription" property="description"></result>
+            <result column="auid" property="uid"></result>
+            <result column="acreate_time" property="createTime"></result>
+            <result column="atype" property="type"></result>
+            <result column="apic" property="pic"></result>
+            <result column="apraise" property="praise"></result>
+            <result column="acontent" property="content"></result>
+            <result column="apraise_uid" property="praiseUid"></result>
+            <result column="afid" property="fid"></result>
+        </collection>
+    </resultMap>
+    <select id="queryList" resultMap="forumResultMap">
+        SELECT
+            t1.*,
+            t2.id aid,
+            t2.content acontent,
+            t2.create_time acreate_time,
+            t2.description adescription,
+            t2.fid afid,
+            t2.pic apic,
+            t2.praise apraise,
+            t2.praise_uid apraise_uid,
+            t2.title atitle,
+            t2.type atype,
+            t2.uid auid
+        FROM
+            forum t1
+                LEFT JOIN forum t2 ON t1.id = t2.fid
+        <where>
+            <if test="params.uid != null and params.name != 0">
+                t1.uid = #{params.uid}
+            </if>
+            and t1.type = '1'
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,83 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /card
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///card?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username:
+    password:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 10000
+#  mail:
+#    host: smtp.163.com
+#    username: 13815457314@163.com
+#    password: JYBOLWHFNMYXHMNC
+
+  mail:
+    host: smtp.qq.com
+    username: 913011175@qq.com
+    password: uqolmydmplmobehh
+
+    properties:
+      from: 913011175@qq.com
+      mail:
+        smtp:
+          soketFactory: javax.net.ssl.SSLSocketFactory
+          debug: true
+    protocol: smtps
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+
+
+
+mybatis-plus:
+  configuration:
+    #    sql打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #    #    下划线转驼峰
+    map-underscore-to-camel-case: true
+  #  #    xml 位置
+  mapper-locations: classpath:mapper/**/*.xml
+  #  #  实体类位置 用于xml指定实体类不用全类名
+  type-aliases-package: com.xdd.init.entity
+
+
+
+
+jwt:
+  # 加密秘钥
+  secret: f4e2e52034348f86b67cde581c0f9eb5
+  # token有效时长，7天，单位秒
+  expiration: 604800
+  # token请求头前缀
+  header: Authorization
+  # refresh token有效时长，30天，单位秒
+  refresh-expiration: 2592000
+
+captchaType: math
+
+# token配置
+token:
+  # 令牌自定义标识
+  header: Authorization
+  # 令牌密钥
+  secret: abcdefghijklmnopqrstuvwxyz
+  # 令牌有效期（默认30分钟）
+  expireTime: 30
+
+
+common:
+  profile:
+
