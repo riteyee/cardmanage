@@ -13,12 +13,6 @@ import com.xdd.init.utils.CommonUtils;
 import com.xdd.init.utils.ServletUtils;
 import org.springframework.stereotype.Service;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2025/5/17
- * @Version:v1.0
- */
 @Service("cardService")
 public class CardServiceImpl extends ServiceImpl<CardMapper, Card> implements CardService {
     @Override

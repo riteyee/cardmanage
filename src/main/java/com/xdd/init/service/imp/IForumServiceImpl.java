@@ -16,12 +16,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2025/5/18
- * @Version:v1.0
- */
 @Service("forumService")
 public class IForumServiceImpl extends ServiceImpl<ForumMapper,Forum> implements IForumService {
 

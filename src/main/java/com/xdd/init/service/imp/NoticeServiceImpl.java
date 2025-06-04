@@ -12,12 +12,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.function.Function;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2025/5/19
- * @Version:v1.0
- */
 @Service("noticeService")
 public class NoticeServiceImpl extends ServiceImpl<NoticeMapper,Notice> implements NoticeService {
 

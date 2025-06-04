@@ -12,12 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2025/5/17
- * @Version:v1.0
- */
 @RestController
 @RequestMapping("api/file")
 public class FileController {

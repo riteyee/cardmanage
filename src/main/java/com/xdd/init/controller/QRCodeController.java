@@ -8,12 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/9/5
- * @Version:v1.0
- */
 @RestController
 @RequestMapping("/api/qrcode")
 public class QRCodeController {

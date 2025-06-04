@@ -1,11 +1,5 @@
 package com.xdd.init.mq.rabbitMq.constents;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/8/27
- * @Version:v1.0
- */
 public class RabbitMqContents {
     public static final String TOPIC_EXCHANGE_ = "topicExchange";
     public static final String DIRECT_EXCHANGE = "directExchange";

@@ -24,12 +24,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2025/5/17
- * @Version:v1.0
- */
 @Service("transactionService")
 public class TransactionServiceImpl extends ServiceImpl<TransactionMapper, Transaction> implements ITransactionService {
 

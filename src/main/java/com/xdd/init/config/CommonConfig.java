@@ -4,12 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/8/16
- * @Version:v1.0
- */
+
 @Component
 @ConfigurationProperties(prefix = "common")
 public class CommonConfig {

@@ -1,11 +1,6 @@
 package com.xdd.init.constant;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/8/8
- * @Version:v1.0
- */
+
 public class SystemConstants {
     public static final String USER_STOP_STATUS = "1";
     public static final String USER_UN_STOP_STATUS = "0";

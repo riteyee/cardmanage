@@ -6,11 +6,6 @@ import org.springframework.amqp.core.ExchangeBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Version:v1.0
- */
 @Configuration
 public class RabbitMqConfig {
     /**

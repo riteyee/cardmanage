@@ -4,12 +4,7 @@ import com.google.zxing.WriterException;
 
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/9/5
- * @Version:v1.0
- */
+
 public interface QRCodeService {
     void generateQRCode(String content, HttpServletResponse response) throws Exception;
 

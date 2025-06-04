@@ -12,12 +12,6 @@ import java.util.regex.Pattern;
 
 import static java.util.regex.Pattern.*;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/8/8
- * @Version:v1.0
- */
 public class CommonUtils {
     public static Page getPage(JSONObject params) {
         Integer pageIndex = (Integer) params.getOrDefault("pageIndex", 0);

@@ -14,12 +14,6 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/8/8
- * @Version:v1.0
- */
 @Service("loginService")
 public class SysLoginService {
 

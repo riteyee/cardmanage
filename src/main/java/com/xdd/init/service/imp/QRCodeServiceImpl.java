@@ -23,12 +23,6 @@ import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @Description: TODO
- * @Author: jzy
- * @Date: 2024/9/5
- * @Version:v1.0
- */
 @Service
 public class QRCodeServiceImpl implements QRCodeService {
 
